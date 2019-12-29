@@ -1,0 +1,126 @@
+
+#vector 
+data <- c(1:10)
+data <- c(111,333,555,333)
+
+typeof(data)
+
+max(data)
+sd(data)
+range(data)
+mode(data)
+data
+
+#matrix
+d = c(1:9)
+matrix(d,nrow = 3)
+matrix(d,nrow = 3,byrow = TRUE)
+m = matrix(d,nrow = 3,byrow = TRUE)
+
+#list
+l = list(d,11,3222,444,"texst",m)
+l[1]
+l[2]
+l[3]
+l[5]
+
+#array 
+ar = array(data=l)
+
+length( ar)
+
+for(x in ar){
+
+    if(is.array(x)){
+      
+      
+    }
+  if(is.array(x)){
+    
+    
+  }
+  if(is.array(x)){
+    
+    
+  }
+  
+    print(x)
+}
+
+is.array(ar)
+is.character(1)
+
+
+##factor 
+f = c("india","us","india","aus")
+
+f 
+is.factor(f)
+f = as.factor(f) #type casting - convert to factor 
+
+
+table(f)
+
+
+##data frame
+id <- c(1:5)
+name <- c("nitn","jaitn","divya","ayush","vidhi")
+
+emp <- data.frame(id,name) 
+
+emp$id
+emp$name 
+
+emp$name[1]
+emp$name[2]
+
+emp[1,1]
+emp[1,1:2]
+emp[1,1:2]
+
+emp[1:4,1]
+
+#install third party library 
+installed.packages() #show list of existing packages
+#install new package 
+install.packages("party")
+
+
+
+###
+id <- c(1:5)
+name <- c("nitn","jaitn","divya","ayush","vidhi")
+
+rbind(id,name)
+cbind(id,name)
+
+### 
+read.table("C:\\Users\\vkumar15\\Desktop\\Learning & Training\\fruits_data.txt")
+
+data   = read.table("C:\\Users\\vkumar15\\Desktop\\Learning & Training\\fruits_data.txt",header = TRUE)
+
+data$fruit_name
+out = table(data$fruit_name)
+
+rainbow(3)
+length(out)
+rainbow(length(out))
+
+barplot(out,col=rainbow(length(out)),
+        xlab = "fruit name",ylab = "count",
+        main = "fruit frequecney")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
